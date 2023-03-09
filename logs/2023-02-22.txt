@@ -1,0 +1,93 @@
+2023-02-22/09.47.21	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/09.47.47	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/09.47.54	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-22/09.49.06	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/09.49.15	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/09.49.15	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Процесс связи с базой данных вызвал исключение: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'tsession.FActivity = 1\' at line 1")', 'DATA': {}}
+2023-02-22/09.52.26	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/09.52.50	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/09.52.50	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/09.55.41	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/09.55.41	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/10.03.04	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.03.25	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/10.03.25	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/10.04.22	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/10.04.22	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/10.04.30	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-22/10.06.04	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.06.19	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/10.06.19	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/10.06.24	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-22/10.06.24	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/10.06.24	ERROR	contact	Исключение вызвало: Aiohttp client throws an error: ServerDisconnectedError: Server disconnected
+2023-02-22/10.09.01	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.09.16	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.09.23	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-22/10.09.23	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/10.09.51	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/10.09.51	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/10.11.13	EVENT	process_start_command	Пользователь 5765098208 - Владимир обратился к телеграм боту
+2023-02-22/10.11.13	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/10.11.18	EVENT	contact	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-02-22/10.11.18	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/10.24.29	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.30.16	EVENT	process_start_command	Пользователь 5765098208 - Владимир обратился к телеграм боту
+2023-02-22/10.30.16	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/10.30.19	EVENT	contact	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-02-22/10.30.19	EVENT	contact	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/10.49.30	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.49.41	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/10.53.26	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.53.30	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/10.53.40	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/10.53.47	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/10.59.52	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/11.00.19	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/11.00.33	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/11.00.34	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/11.00.40	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/11.01.19	EVENT	process_start_command	Пользователь 382507782 - Scitec обратился к телеграм боту
+2023-02-22/11.01.19	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/11.01.58	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/11.02.41	EVENT	contact	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-02-22/11.02.41	EVENT	contact	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-22/11.03.36	EVENT	contact	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-02-22/11.03.36	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-22/11.03.39	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 7, 'FUserID': 3, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 11, 17), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 11, 17), 'FDateClose': None, 'FActivity': 1}}
+2023-02-22/11.09.38	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/11.09.45	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/11.21.43	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.20.04	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.22.04	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.25.15	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.25.21	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 11, 15, 4), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.28.40	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.28.46	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 25, 20), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.29.39	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.29.45	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 28, 45), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.32.24	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.32.30	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 29, 44), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.46.14	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.46.27	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 32, 28), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.47.31	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.47.34	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 46, 26), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.48.58	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.56.48	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/14.56.58	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 47, 33), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/14.57.05	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-22/16.02.32	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/16.03.04	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-22/16.03.06	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-22/16.03.39	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-22/16.04.12	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-22/16.04.29	EVENT	stop_thread_event	Пользователь 382507782 остановил поиск событий для рассылки сообщений
+2023-02-22/16.04.42	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-02-22/16.05.22	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-02-22/16.05.22	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-22/16.05.47	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-22/16.06.29	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-22/16.06.31	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-22/16.06.50	EVENT	stop_thread_event	Пользователь 382507782 остановил поиск событий для рассылки сообщений
+2023-02-22/16.06.58	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 14, 56, 56), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-22/16.07.02	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.

@@ -1,0 +1,139 @@
+2023-02-27/11.46.16	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/11.46.36	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 6, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 9, 22), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 16, 6, 57), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/11.46.41	EVENT	stop_thread_event	Пользователь 382507782 остановил поиск событий для рассылки сообщений
+2023-02-27/11.51.10	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/11.51.20	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/11.51.30	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/11.51.31	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/11.51.36	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 9, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 11, 51, 20), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 11, 51, 20), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/11.51.57	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/11.52.03	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/11.52.39	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/11.53.07	EVENT	stop_thread_event	Пользователь 382507782 остановил поиск событий для рассылки сообщений
+2023-02-27/11.53.10	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-02-27/11.53.23	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 9, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 11, 51, 20), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 11, 51, 25), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/11.53.27	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/11.53.38	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/11.53.39	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/11.57.54	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/12.06.13	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/12.06.18	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 10, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 11, 53, 28), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 11, 53, 28), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/12.13.06	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/12.13.21	EVENT	contact	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/12.13.22	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/12.13.55	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 11, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 12, 13, 10), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 12, 13, 10), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/12.14.30	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 7, 'FUserID': 3, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 2, 22, 10, 11, 17), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 10, 11, 17), 'FDateClose': None, 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-02-27/12.16.08	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/12.16.16	EVENT	contact	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-02-27/12.16.16	EVENT	contact	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/12.16.20	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 8, 'FUserID': 3, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 2, 22, 11, 3, 35), 'FLastAccessDate': datetime.datetime(2023, 2, 22, 11, 3, 35), 'FDateClose': None, 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-02-27/12.17.48	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/12.17.54	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.18.26	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.19.02	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.19.03	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.19.35	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.19.36	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.20.09	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.20.09	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.20.42	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.20.42	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.21.15	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.21.15	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.21.47	EVENT	stop_thread_event	Пользователь 382507782 остановил поиск событий для рассылки сообщений
+2023-02-27/12.21.48	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.21.48	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/12.22.18	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-02-27/13.17.58	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/13.18.17	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/13.18.22	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/13.18.22	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/13.27.23	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/13.27.36	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/13.27.48	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/13.27.49	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/13.29.55	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/13.30.02	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 14, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 13, 27, 48), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 13, 27, 48), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/13.30.11	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 14, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 13, 27, 48), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 13, 30), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/13.30.33	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/13.30.41	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/13.30.41	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/13.51.36	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/13.51.54	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/13.52.01	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/13.52.01	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/13.52.17	EVENT	stop_thread_event	Пользователь 382507782 остановил поиск событий для рассылки сообщений
+2023-02-27/13.52.32	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-02-27/15.44.47	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/15.46.00	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/15.46.31	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/15.46.49	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 15, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 13, 30, 40), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 13, 30, 40), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/15.46.58	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/15.47.15	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/15.47.25	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/15.47.27	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/15.47.27	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/15.47.28	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/15.47.28	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/15.48.03	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/15.48.03	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/15.48.03	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/15.48.03	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/15.59.40	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/15.59.56	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/15.59.58	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/15.59.58	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/15.59.58	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-02-27/15.59.58	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-02-27/15.59.58	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/15.59.58	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-02-27/15.59.58	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/15.59.58	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-02-27/16.12.26	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/16.12.52	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/16.13.06	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/16.27.21	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/16.28.44	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/16.28.53	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/16.28.55	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/16.28.55	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/16.33.36	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/16.33.50	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/16.33.52	EVENT	thread_event	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/16.33.52	EVENT	thread_event	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/16.33.52	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/16.33.52	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/17.13.00	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/17.13.00	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 15, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 13, 30, 40), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 15, 46, 48), 'FDateClose': None, 'FActivity': 1, 'FName': 'Администратор системы1', 'FPhone': '79661140411'}}
+2023-02-27/17.14.16	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 15, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 13, 30, 40), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 17, 12, 59), 'FDateClose': None, 'FActivity': 1, 'FName': 'Тестовый администратор системы', 'FPhone': '79661140411'}}
+2023-02-27/17.15.32	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/17.15.44	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-02-27/17.15.44	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/17.33.55	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/17.34.17	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/17.36.23	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/17.36.36	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/17.39.03	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-02-27/17.39.15	EVENT	start_thread_event	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-02-27/17.39.19	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 16, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 2, 27, 17, 15, 43), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 17, 15, 43), 'FDateClose': None, 'FActivity': 1, 'FName': 'Тестовый администратор системы', 'FPhone': '79661140411'}}
+2023-02-27/17.48.01	EVENT	process_start_command	Пользователь 308933565 - Сергей обратился к телеграм боту
+2023-02-27/17.48.01	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-27/17.48.06	EVENT	subscribe	Пользователь 308933565 отправил номер телефона: 79038254837
+2023-02-27/17.48.06	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/17.48.11	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 17, 'FUserID': 7, 'FTGUID': '308933565', 'FTGName': 'Сергей', 'FDateCreate': datetime.datetime(2023, 2, 27, 17, 48, 5), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 17, 48, 5), 'FDateClose': None, 'FActivity': 1, 'FName': 'Воробьев Сергей', 'FPhone': '79038254837'}}
+2023-02-27/17.49.20	EVENT	process_start_command	Пользователь 308933565 - Сергей обратился к телеграм боту
+2023-02-27/17.49.20	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 17, 'FUserID': 7, 'FTGUID': '308933565', 'FTGName': 'Сергей', 'FDateCreate': datetime.datetime(2023, 2, 27, 17, 48, 5), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 17, 48, 10), 'FDateClose': None, 'FActivity': 1, 'FName': 'Воробьев Сергей', 'FPhone': '79038254837'}}
+2023-02-27/17.49.24	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 17, 'FUserID': 7, 'FTGUID': '308933565', 'FTGName': 'Сергей', 'FDateCreate': datetime.datetime(2023, 2, 27, 17, 48, 5), 'FLastAccessDate': datetime.datetime(2023, 2, 27, 17, 49, 18), 'FDateClose': None, 'FActivity': 1, 'FName': 'Воробьев Сергей', 'FPhone': '79038254837'}}
+2023-02-27/17.49.31	EVENT	process_start_command	Пользователь 5765098208 - Владимир обратился к телеграм боту
+2023-02-27/17.49.32	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-27/17.50.50	EVENT	subscribe	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-02-27/17.50.50	EVENT	subscribe	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-02-27/17.51.04	EVENT	thread_event	True
+2023-02-27/17.51.04	EVENT	thread_event	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/17.51.04	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/17.51.04	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/18.01.46	EVENT	thread_event	True
+2023-02-27/18.01.46	EVENT	thread_event	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-02-27/18.01.46	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-02-27/18.01.46	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-02-27/18.01.46	SUCCESS	send_telegram	Успешно отправлено сообщение для 308933565

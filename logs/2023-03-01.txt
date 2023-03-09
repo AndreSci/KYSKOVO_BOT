@@ -1,0 +1,177 @@
+2023-03-01/12.07.24	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.07.36	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.29.21	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.29.35	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/12.29.42	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/12.29.55	EVENT	EventThread.stop	Пользователь 382507782 отправил запрос на остановку поиска событий
+2023-03-01/12.29.55	EVENT	EventThread.stop	Успешно остановлен поток для событий
+2023-03-01/12.30.14	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-03-01/12.31.54	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.32.03	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/12.32.03	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/12.32.22	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/12.32.34	EVENT	EventThread.stop	Пользователь 382507782 отправил запрос на остановку поиска событий
+2023-03-01/12.32.54	WARNING	thread_event	Поток для поиска событий в БД завершил свою жизнь.
+2023-03-01/12.32.54	EVENT	EventThread.stop	Успешно остановлен поток для событий
+2023-03-01/12.51.20	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.51.26	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FDateClose': None, 'FActivity': 1, 'FName': 'Тестовый администратор системы', 'FPhone': '79661140411'}}
+2023-03-01/12.53.16	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.54.00	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/12.54.07	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/12.54.19	EVENT	EventThread.stop	Пользователь 382507782 отправил запрос на остановку поиска событий
+2023-03-01/12.54.39	WARNING	start_event_manager	Поток для поиска событий в БД завершил свою жизнь.
+2023-03-01/12.54.39	EVENT	EventThread.stop	Успешно остановлен поток для событий
+2023-03-01/13.00.13	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/13.00.22	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/13.00.28	EVENT	EventThread.stop	Пользователь 382507782 отправил запрос на остановку поиска событий
+2023-03-01/13.00.29	WARNING	start_event_manager	Поток для поиска событий в БД завершил свою жизнь.
+2023-03-01/13.00.29	EVENT	EventThread.stop	Успешно остановлен поток для событий
+2023-03-01/13.02.34	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/13.02.41	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 12, 51, 25), 'FDateClose': None, 'FActivity': 1, 'FName': 'Тестовый администратор системы', 'FPhone': '79661140411'}}
+2023-03-01/13.02.49	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/13.03.28	EVENT	EventThread.stop	Пользователь 382507782 отправил запрос на остановку поиска событий
+2023-03-01/13.03.28	WARNING	start_event_manager	Поток для поиска событий в БД завершил свою жизнь.
+2023-03-01/13.03.28	EVENT	EventThread.stop	Успешно остановлен поток для событий
+2023-03-01/13.04.25	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/13.05.14	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/13.05.27	EVENT	EventThread.stop	Пользователь 382507782 отправил запрос на остановку поиска событий
+2023-03-01/13.05.27	WARNING	start_event_manager	Поток для поиска событий в БД завершил свою жизнь.
+2023-03-01/13.05.27	EVENT	EventThread.stop	Успешно остановлен поток для событий
+2023-03-01/13.13.55	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/13.14.07	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 2, 39), 'FDateClose': None, 'FActivity': 1, 'FName': 'Тестовый администратор системы', 'FPhone': '79661140411'}}
+2023-03-01/13.15.46	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/13.25.05	EVENT	subscribe	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-03-01/13.25.05	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/13.26.00	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 19, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FDateClose': None, 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/13.27.32	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/13.27.43	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 19, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 25, 59), 'FDateClose': datetime.datetime(2023, 3, 1, 13, 27, 9), 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/13.27.59	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/13.28.03	EVENT	subscribe	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-03-01/13.28.03	EVENT	subscribe	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/13.28.07	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/13.28.19	EVENT	subscribe	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-03-01/13.28.20	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/13.31.58	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 19, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 27, 42), 'FDateClose': datetime.datetime(2023, 3, 1, 13, 27, 9), 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/13.32.12	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/13.32.27	EVENT	subscribe	Пользователь 5765098208 отправил номер телефона: 79156814087
+2023-03-01/13.32.27	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/13.36.27	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 19, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 31, 57), 'FDateClose': datetime.datetime(2023, 3, 1, 13, 27, 9), 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/13.36.28	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/13.40.27	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 14, 6), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/14.00.03	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 19, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 36, 26), 'FDateClose': datetime.datetime(2023, 3, 1, 13, 27, 9), 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/14.01.13	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 19, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 25, 4), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 14, 0, 1), 'FDateClose': datetime.datetime(2023, 3, 1, 13, 27, 9), 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/14.02.19	EVENT	start_event_manager	True
+2023-03-01/14.02.19	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/14.02.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/14.02.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/14.02.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/14.02.19	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-03-01/14.02.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/14.03.20	EVENT	start_event_manager	True
+2023-03-01/14.03.20	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/14.03.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/14.03.20	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-03-01/14.03.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/14.03.39	EVENT	process_start_command	Пользователь 5765098208 - Владимир обратился к телеграм боту
+2023-03-01/14.03.39	EVENT	process_start_command	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 21, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 32, 26), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 32, 26), 'FDateClose': None, 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/14.03.50	EVENT	start_event_manager	True
+2023-03-01/14.03.51	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/14.03.51	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/14.03.51	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-03-01/14.03.51	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/14.04.21	EVENT	start_event_manager	True
+2023-03-01/14.04.21	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/14.04.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/14.04.22	WARNING	send_telegram	Не удалось отправить сообщение пользователю: 382507784
+2023-03-01/14.04.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/14.54.06	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/15.02.11	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/15.02.26	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 13, 40, 25), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.02.29	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 2, 26), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.02.34	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 2, 28), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.02.47	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 18, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 12, 32, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 2, 33), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.02.47	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.02.55	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/15.02.55	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.07.55	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 22, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.34.42	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/15.35.11	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 22, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 7, 54), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.35.11	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 22, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 35, 10), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.35.15	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 22, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 35, 11), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.35.15	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 22, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 35, 14), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.35.18	EVENT	unsubscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 22, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 2, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 35, 14), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.35.18	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.35.23	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/15.35.24	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.37.42	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 23, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 35, 23), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 35, 23), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.37.42	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 23, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 35, 23), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 37, 40), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.37.43	EVENT	unsubscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 23, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 35, 23), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 37, 40), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.37.43	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.38.03	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/15.38.03	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.38.58	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/15.39.02	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 27, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 38, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 38, 2), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.39.02	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 27, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 38, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 39, 1), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.39.05	EVENT	unsubscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 27, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 38, 2), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 39, 1), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.39.05	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.39.07	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/15.39.07	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.40.11	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/15.45.27	EVENT	echo_def	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/15.45.33	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/15.45.33	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/15.47.01	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/15.47.13	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.47.13	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 47, 12), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.47.22	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 47, 13), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/15.47.22	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 47, 21), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/16.08.41	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/16.08.46	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-01/16.08.46	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 15, 47, 21), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/16.08.47	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-01/16.08.47	WARNING	anti_flood	Ошибка многократного запроса от пользователя: 382507782.
+2023-03-01/16.08.48	WARNING	anti_flood	Ошибка многократного запроса от пользователя: 382507782.
+2023-03-01/16.08.48	WARNING	anti_flood	Ошибка многократного запроса от пользователя: 382507782.
+2023-03-01/16.08.48	WARNING	anti_flood	Ошибка многократного запроса от пользователя: 382507782.
+2023-03-01/16.08.48	WARNING	anti_flood	Ошибка многократного запроса от пользователя: 382507782.
+2023-03-01/16.08.53	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-01/16.08.53	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 16, 8, 45), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/16.08.58	EVENT	echo_def	Обращение от пользователя 382507782 text = Помощь
+2023-03-01/16.08.58	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 16, 8, 52), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/16.09.36	EVENT	unsubscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 33, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 15, 45, 32), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 16, 8, 56), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/16.09.36	EVENT	echo_def	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.09.46	EVENT	subscribe	Пользователь 382507782 отправил номер телефона: 79661140411
+2023-03-01/16.09.46	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.15.23	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/16.19.40	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/16.19.54	EVENT	subscribe	Пользователь 5765098208 предоставил номер телефона: 79156814087
+2023-03-01/16.19.54	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.20.14	EVENT	echo_def	Обращение от пользователя 5765098208 text = Получить статус
+2023-03-01/16.20.15	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 21, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 13, 32, 26), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 14, 3, 38), 'FDateClose': datetime.datetime(2023, 3, 1, 16, 19, 18), 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-01/16.20.34	EVENT	echo_def	Обращение от пользователя 5765098208 text = Получить статус
+2023-03-01/16.20.34	EVENT	take_status	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-01/16.20.42	EVENT	subscribe	Пользователь 5765098208 предоставил номер телефона: 79156814087
+2023-03-01/16.20.42	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.21.21	EVENT	echo_def	Обращение от пользователя 382507782 text = Включить рассылку
+2023-03-01/16.21.21	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/16.24.56	EVENT	start_event_manager	True
+2023-03-01/16.24.56	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.24.57	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/16.24.57	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.24.57	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/16.24.57	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/16.24.57	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/16.51.45	EVENT	start_event_manager	True
+2023-03-01/16.51.45	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-01/16.51.45	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-01/16.51.45	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-01/18.22.23	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/18.22.39	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-01/18.22.39	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 34, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 16, 9, 45), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 16, 9, 45), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/18.22.44	EVENT	echo_def	Обращение от пользователя 382507782 text = Включить рассылку
+2023-03-01/18.22.44	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
+2023-03-01/18.24.04	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
+2023-03-01/18.24.11	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-01/18.24.11	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 34, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 1, 16, 9, 45), 'FLastAccessDate': datetime.datetime(2023, 3, 1, 18, 22, 37), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-01/18.24.14	EVENT	echo_def	Обращение от пользователя 382507782 text = Включить рассылку
+2023-03-01/18.24.14	EVENT	EventThread.start	Пользователь 382507782 запустил поиск событий для рассылки сообщений
