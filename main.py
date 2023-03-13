@@ -57,7 +57,7 @@ async def unsubscribe(msg: types.Message, state: FSMContext):
 
     # Проверяем пользователя
     test_user = AuthorDB.find_active_session(msg.from_user.id)
-    logger.add_log(f"EVENT\tunsubscribe\t{test_user}")
+    logger.add_log(f"EVENT\tunsubscribe\t{test_user}", print_it=False)
 
     if test_user.get('RESULT') == "SUCCESS":
         db_result = AuthorDB.deactivate_session(msg.from_user.id)
@@ -81,10 +81,17 @@ async def unsubscribe(msg: types.Message, state: FSMContext):
 async def help_func(msg: types.Message, state: FSMContext):
     # Проверяем пользователя
     test_user = AuthorDB.find_active_session(msg.from_user.id)
-    logger.add_log(f"EVENT\thelp_func\t{test_user}")
+    logger.add_log(f"EVENT\thelp_func\t{test_user}", print_it=False)
 
     if test_user.get('RESULT') == "SUCCESS":
-        await bot.send_message(msg.from_user.id, TEXT_HELP, reply_markup=UserAuthor.take_status())
+
+        test_user = AllowedUser()
+
+        # Ищем id пользователя в файле allowed_users.ini
+        if test_user.find_user(str(msg.from_user.id)):
+            await bot.send_message(msg.from_user.id, TEXT_HELP_ADMIN, reply_markup=UserAuthor.take_status())
+        else:
+            await bot.send_message(msg.from_user.id, TEXT_HELP, reply_markup=UserAuthor.take_status())
     else:
         await bot.send_message(msg.from_user.id, f"В доступе отказано. Требуется регистрация.",
                                reply_markup=UserAuthor.take_contacts())
@@ -96,7 +103,7 @@ async def help_func(msg: types.Message, state: FSMContext):
 async def take_status(msg: types.Message, state: FSMContext):
     # Проверяем пользователя
     test_user = AuthorDB.find_active_session(msg.from_user.id)
-    logger.add_log(f"EVENT\ttake_status\t{test_user}")
+    logger.add_log(f"EVENT\ttake_status\t{test_user}", print_it=False)
 
     if test_user.get('RESULT') == "SUCCESS":
         await bot.send_message(msg.from_user.id, f"Дата регистрации: {test_user['DATA']['FDateCreate']}.\n"
@@ -140,6 +147,50 @@ async def subscribe(msg: types.Message):
         logger.add_log(f"WARNING\tsubscribe\tОбращение от {msg.from_user.id} с пустым полем 'contact'")
 
 
+# Функция запускает процесс поиска событий для рассылки
+@dp.message_handler(Text(equals=['/on_newsletter'], ignore_case=True))
+@dp.throttled(anti_flood, rate=3)
+async def on_newsletter(msg: types.Message, state: FSMContext):
+
+    test_user = AllowedUser()
+
+    # Ищем id пользователя в файле allowed_users.ini
+    if test_user.find_user(str(msg.from_user.id)):
+
+        EventThread.start(msg.from_user.id, TOKEN)
+        await bot.send_message(msg.from_user.id,
+                               f"Был запущен процесс поиска событий для рассылки сообщений.")
+    else:
+        await bot.send_message(msg.from_user.id,
+                               f"Данная команда для вас не доступна")
+
+    # Функция запускает процесс поиска событий для рассылки
+
+
+@dp.message_handler(Text(equals=['/off_newsletter'], ignore_case=True))
+@dp.throttled(anti_flood, rate=3)
+async def off_newsletter(msg: types.Message, state: FSMContext):
+    test_user = AllowedUser()
+
+    # Ищем id пользователя в файле allowed_users.ini
+    if test_user.find_user(str(msg.from_user.id)):
+
+        await bot.send_message(msg.from_user.id,
+                               f"Ожидаем завершения процесса рассылки.")
+
+        result = await EventThread.stop(msg.from_user.id)
+
+        if result:
+            await bot.send_message(msg.from_user.id,
+                                   f"Был ОСТАНОВЛЕН процесс поиска событий для рассылки сообщений.")
+        else:
+            await bot.send_message(msg.from_user.id,
+                                   f"Не удалось остановить процесс поиска событий. Попробуйте еще раз.")
+    else:
+        await bot.send_message(msg.from_user.id,
+                               f"Данная команда для вас не доступна")
+
+
 # Функция эхо имеет ряд команд для русского языка
 @dp.message_handler(content_types=['text'])
 @dp.throttled(anti_flood, rate=1)
@@ -153,27 +204,3 @@ async def echo_def(msg: types.Message, state: FSMContext):
         await unsubscribe(msg, state)
     elif msg.text.lower() == "помощь":
         await help_func(msg, state)
-
-    test_user = AllowedUser()
-
-    if msg.text.lower() in LIST_ECHO:
-
-        if test_user.find_user(str(msg.from_user.id)):
-
-            if msg.text.lower() == "включить рассылку":
-                EventThread.start(msg.from_user.id, TOKEN)
-                await bot.send_message(msg.from_user.id,
-                                       f"Был запущен процесс поиска событий для рассылки сообщений.")
-
-            elif msg.text.lower() == "выключить рассылку":
-                await bot.send_message(msg.from_user.id, f"Отправлен запрос на отключение рассылки.")
-
-                result = await EventThread.stop(msg.from_user.id)
-                # ждет результат отключения
-
-                if result:
-                    await bot.send_message(msg.from_user.id, f"Рассылка была отключена.")
-                else:
-                    await bot.send_message(msg.from_user.id,
-                                           f"Ошибка! Не удалось остановить рассылку. Повторите запрос.")
-

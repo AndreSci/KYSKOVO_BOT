@@ -19,7 +19,8 @@ class EventDB:
             try:
                 with connection.cursor() as cur:
                     # Ищем активную сессию и активного пользователя
-                    cur.execute(f"select tsession.FTGUID, tevent.FEventMessage, tevent.FID as EFID "
+                    cur.execute(f"select tsession.FTGUID, tevent.FEventMessage, tevent.FDateEvent, "
+                                f"tevent.FID as EFID "
                                 f"from vig_sender.Tevent, vig_sender.tgroupeventtype, vig_sender.tusergroup, "
                                 f"vig_sender.tuser, vig_sender.tsession "
                                 f"where TGroupEventType.FGroupID = TUserGroup.FGroupID "
@@ -29,25 +30,19 @@ class EventDB:
                                 f"and TEvent.FProcessed = 0 "
                                 f"and tuser.FActivity = 1 "
                                 f"and tsession.FActivity = 1 "
-                                f"order by EFID")  # TODO ПРОТЕСТИРОВАТЬ
-                    event_find = cur.fetchall()
+                                f"order by EFID")
 
-                    if event_find:
+                    ret_value['DATA']['FOR_SEND'] = cur.fetchall()
+
+                    connection.commit()
+
+                    # Выгружаем все события, для завершения которые не имеют получателя
+                    cur.execute(f"select FID from vig_sender.tevent where FProcessed = 0")
+
+                    ret_value['DATA']['ALL'] = cur.fetchall()
+
+                    if ret_value['DATA']['ALL']:
                         ret_value['RESULT'] = "SUCCESS"
-                        ret_value['DATA'] = event_find
-
-                        try:
-                            # Закрываем активные события без адресата
-                            cur.execute(f"update vig_sender.tevent "
-                                        f"set FProcessed = 1 "
-                                        f"where FEventTypeID "
-                                        f"not in (select FEventTypeID from vig_sender.tgroupeventtype) "
-                                        f"and FProcessed = 0")
-
-                            connection.commit()
-
-                        except Exception as ex:
-                            print(f"EXCEPTION\tEventDB.find_event\tИсключение вызволо {ex}")
                     else:
                         ret_value['DESC'] = "Не удалось найти активные события"
 
@@ -77,8 +72,44 @@ class EventDB:
                     cur.execute(f"update vig_sender.tevent set FProcessed = 1 where FID = {fid}")
 
                     connection.commit()
+                    ret_value['DATA']['row_change'] = cur.rowcount
 
                 ret_value['RESULT'] = "SUCCESS"
+
+            except Exception as ex:
+                ret_value['DESC'] = f"Процесс связи с базой данных вызвал исключение: {ex}"
+        else:
+            ret_value = connection
+
+        return ret_value
+
+    @staticmethod
+    def done_events(list_event_name: list) -> dict:
+        """ ставит FProcessed = 1 """
+
+        ret_value = {"RESULT": "ERROR", "DESC": "", "DATA": dict()}
+
+        # Создаем строку из FID событий для обновления их в БД
+        fids = ', '.join(str(fid) for fid in list_event_name)
+
+        # Создаем подключение
+        db_con = DBCon()
+        connection = db_con.connect()
+
+        if connection['RESULT'] == "SUCCESS":
+            connection = connection['DATA']['pool']
+
+            try:
+                with connection.cursor() as cur:
+                    # Ищем активную сессию и активного пользователя
+                    cur.execute(f"update vig_sender.tevent set FProcessed = 1 where FID in ({fids})")
+
+                    connection.commit()
+
+                    result = cur.rowcount
+
+                ret_value['RESULT'] = "SUCCESS"
+                ret_value['DESC'] = f"Успешно изменено {result} из {len(list_event_name)} полей"
 
             except Exception as ex:
                 ret_value['DESC'] = f"Процесс связи с базой данных вызвал исключение: {ex}"

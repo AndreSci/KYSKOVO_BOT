@@ -17,6 +17,8 @@ def run_bot():
     # Запускаем телеграм-бот
     executor.start_polling(dp)
 
+    input()
+
 
 if __name__ == "__main__":
     run_bot()

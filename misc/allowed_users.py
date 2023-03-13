@@ -47,7 +47,8 @@ class AllowedUser:
                 if int(self.allow_users[user_id]) >= activity_lvl:
                     ret_value = True
             else:
-                logger.add_log(f"ERROR\tAllowedUser.read_file\tПользователь {user_id} не имеет прав на данное действие.")
+                logger.add_log(f"ERROR\tAllowedUser.read_file\t"
+                               f"Пользователь {user_id} не имеет прав на данное действие.", print_it=False)
 
         return ret_value
 

@@ -16,24 +16,36 @@ from misc.timer import timer_function
 DO_SEARCHING = True
 THREAD_LIFE = threading.Thread()
 
-# Переменные для сбора неудачных сообщений
-THREAD_LOCK_MASS = threading.Lock()
-MISS_MASS = list()
+
+class SendMiss:
+    """ Класс сбора ошибок при отправках сообщений """
+    def __init__(self):
+        self.miss_list = list()
+
+    def add(self, user_id: str, text: str):
+        """ Функция сбора ошибок отправки """
+        self.miss_list.append([user_id, text])
+
+    def save(self):
+        """ Функция сохраняет неудачные сообщения в файл если есть хотя бы одно пропущенное сообщение """
+
+        if len(self.miss_list) > 0:
+            today = datetime.datetime.today()
+            for_file_name = str(today.strftime("%Y-%m-%d"))
+            date_time = str(today.strftime("%Y-%m-%d/%H.%M.%S"))
+
+            # Открываем и записываем логи в файл отчета.
+            with open(f'./missed_message/{for_file_name}.txt', 'a', encoding='utf-8') as file:
+                file.write(f"{date_time} - {self.miss_list}")
 
 
-# Функция сбора пропущенных или ошибочных сообщений
-def add_miss_mass(user_id: str, text: str):
-    global MISS_MASS
-
-    with THREAD_LOCK_MASS:
-        MISS_MASS.append([user_id, text])
-
-
-# Основная функция запуска сбора событий из БД
 def start_event_manager(token: str):
+    """ Основная функция запуска сбора событий из БД """
+
     ev_mng = EventManagerBD(token)
 
-    print("Поиск событий Активен\n")
+    logger.add_log(f"EVENT\tstart_event_manager\tПоиск событий Активен")
+
     time.sleep(2)
     index = 30
 
@@ -45,26 +57,41 @@ def start_event_manager(token: str):
             index = 0
             events_for = ev_mng.take_events()
 
+            # класс сбора пропущенных сообщений
+            miss_mess = SendMiss()
+
             if events_for:
 
                 list_event_name = list()
-                logger.add_log(f"EVENT\tstart_event_manager\t{events_for}", print_it=False)
+                logger.add_log(f"EVENT\tstart_event_manager\tНайдено {len(ev_mng.all_events_id)} событий, "
+                               f"идет процесс обработки...")
+                logger.add_log(f"EVENT\tstart_event_manager\tСписок FID событий: {ev_mng.all_events_id}",
+                               print_it=False)
 
                 for it in ev_mng.events:
-                    # Создаем отдельный поток на запрос
-                    # ev_mng.send_telegram(it['FTGUID'], it['FEventMessage'])
 
-                    tr = threading.Thread(target=ev_mng.send_telegram, args=[it['FTGUID'], it['FEventMessage']])
+                    # Если нужно срочно отменить рассылку
+                    if not DO_SEARCHING:
+                        logger.add_log(f"WARNING\tstart_event_manager\t"
+                                       f"Рассылка была экстренно отключена администратором")
+                        return 2
 
-                    tr.start()
-                    # ev_mng.send_telegram(it['FTGUID'], it['FEventMessage'])
-                    time.sleep(0.1)     # TODO ПРОТЕСТИРОВАТЬ НА СКОРОСТЬ
+                    # отправляем сообщение
+                    ev_mng.send_telegram(it['FTGUID'], f"{it['FDateEvent']}\n{it['FEventMessage']}", miss_mess)
 
+                    # Проверяем и добавляем в список обработанных событий
                     if it['EFID'] not in list_event_name:
                         list_event_name.append(it['EFID'])
 
-                        db_result = EventDB.done_event(it['EFID'])
-                        logger.add_log(f"EVENT\tstart_event_manager\t{db_result}", print_it=False)
+                logger.add_log(f"EVENT\tstart_event_manager\tПропущенных сообщение при рассылке "
+                               f"{len(miss_mess.miss_list)}")
+                logger.add_log(f"EVENT\tstart_event_manager\t"
+                               f"Список всех событий которые имели адресата: {list_event_name}", print_it=False)
+
+                result_update = EventDB.done_events(ev_mng.all_events_id)
+
+                logger.add_log(f"{result_update['RESULT']}\tstart_event_manager\t"
+                               f"Результат обновления БД: {result_update}")
 
         index += 1
 
@@ -76,56 +103,72 @@ class EventManagerBD:
 
     def __init__(self, token):
         self.events = list()
+        self.all_events_id = list()  # Список всех id событий для обнуления
         self.token = token
 
     def take_events(self) -> bool:
         """ Получаем список событий из БД (TEvent)"""
+
+        ret_value = False
+
         db_result = EventDB.find_events()
 
         if db_result['RESULT'] == "SUCCESS":
-            self.events = db_result['DATA']
-        else:
-            return False
+            self.events = db_result['DATA']['FOR_SEND']
+            self.all_events_id = []  # обнуляем список
 
-        return True
+            # Создаем список всех событий для обнуления
+            for it in db_result['DATA'].get('ALL'):
+                self.all_events_id.append(it.get('FID'))
+
+            ret_value = True
+
+        return ret_value
 
     def update_event(self, fid) -> bool:
         """ Функция меняет поле FProcessed = 1 в БД TEvent по FID """
+        ret_value = False
 
         db_result = EventDB.done_event(fid)
 
         if db_result['RESULT'] == "SUCCESS":
             logger.add_log(f"EVENT\tEventManager.update_event\tСобытие {fid} было успешно обработано", print_it=False)
+            ret_value = True
         else:
             logger.add_log(f"ERROR\tEventManager.update_event\tОшибка редактирования события: {db_result}")
-            return False
 
-        return True
+        return ret_value
 
-    def send_telegram(self, user_id: str, text: str):
+    def send_telegram(self, user_id: str, text: str, miss_mess: SendMiss):
+        """ Функция отправляет сообщение пользователю через API telegram """
+
+        ret_value = False
         url = f"https://api.telegram.org/bot{self.token}/sendMessage?chat_id={user_id}&text={text}"
 
         try:
             result = requests.get(url, timeout=5).json()
 
             if not result.get('ok'):
-                add_miss_mass(user_id, text)
-                logger.add_log(f"WARNING\tsend_telegram\tНе удалось отправить сообщение пользователю: {user_id}")
-            else:   # TODO добавить print_if=False
-                logger.add_log(f"SUCCESS\tsend_telegram\tУспешно отправлено сообщение для {user_id}")
+                miss_mess.add(user_id, text)
+                logger.add_log(f"WARNING\tsend_telegram\t"
+                               f"Не удалось отправить сообщение пользователю: {user_id} - {text}")
+            else:
+                logger.add_log(f"SUCCESS\tsend_telegram\tУспешно отправлено сообщение для {user_id} - {text}",
+                               print_it=False)
+                ret_value = True
 
         except Exception as ex:
-            add_miss_mass(user_id, text)
-            logger.add_log(f"ERROR\tsend_telegram\tВозникла ошибка при попытке сделать запрос {ex}")
+            logger.add_log(f"ERROR\tsend_telegram\tВозникла ошибка при попытке отправить сообщение: {ex}")
+            miss_mess.add(user_id, text)
 
-        return True
+        return ret_value
 
 
 class EventThread:
     """ Класс служит для запуска и остановки потока который ожидает событие """
 
     @staticmethod
-    def start(user_id: str, token: str):  # TODO убрать глобальный токен
+    def start(user_id: str, token: str):
         """ Функция создает поток для поиска событий в БД """
 
         global DO_SEARCHING
@@ -140,7 +183,7 @@ class EventThread:
             logger.add_log(f"EVENT\tEventThread.start\t"
                            f"Пользователь {user_id} запустил поиск событий для рассылки сообщений")
         else:
-            logger.add_log(f"ERROR\t\tОшибка запуска потока для отслеживания Событий из БД")
+            logger.add_log(f"ERROR\tEventThread.start\tПоток для поиска событий уже запущен")
 
     @staticmethod
     async def stop(user_id: str):

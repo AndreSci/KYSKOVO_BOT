@@ -2445,3 +2445,241 @@
 2023-03-09/19.10.13	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 37, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 4, 15, 36, 1), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 18, 3, 27), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
 2023-03-09/19.11.15	EVENT	run_bot	Начало работы VIG_Sender (кусково бот)
 2023-03-09/19.11.15	EVENT	EventThread.start	Пользователь run_bot запустил поиск событий для рассылки сообщений
+2023-03-09/19.58.05	EVENT	start_event_manager	True
+2023-03-09/19.58.05	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.05	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.05	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.05	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.05	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.05	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.05	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.05	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.06	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.06	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.06	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.06	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.07	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.07	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.07	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.07	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.07	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.08	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.08	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.08	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.08	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.09	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.09	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.09	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.09	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.09	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.09	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.09	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.09	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.09	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.09	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.10	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.10	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.10	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.10	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.11	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.11	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.11	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.11	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.12	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.12	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.12	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.12	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.12	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.13	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.13	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.13	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.13	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.13	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.13	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.13	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.13	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.13	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.14	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.14	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.14	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.14	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.14	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.15	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.15	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.16	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.16	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.16	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.16	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.17	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.17	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.17	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.17	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.18	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.18	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.18	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.18	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.18	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.18	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.18	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.18	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.18	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.19	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.19	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.19	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.19	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.19	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.20	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.20	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.20	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.20	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.21	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.21	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.21	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.21	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.21	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.22	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.22	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.22	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.22	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.23	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.23	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.23	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.23	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.23	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.23	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.23	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.23	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.23	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.23	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.24	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.24	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.24	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.24	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.25	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.25	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.25	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.25	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.26	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.26	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.26	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.26	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.26	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.27	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/19.58.27	EVENT	start_event_manager	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/19.58.27	SUCCESS	send_telegram	Успешно отправлено сообщение для 382507782
+2023-03-09/19.58.27	SUCCESS	send_telegram	Успешно отправлено сообщение для 5765098208
+2023-03-09/20.00.15	EVENT	echo_def	Обращение от пользователя 450250904 text = Начало
+2023-03-09/20.00.20	EVENT	echo_def	Обращение от пользователя 450250904 text = Начало
+2023-03-09/20.00.41	EVENT	echo_def	Обращение от пользователя 5765098208 text = Получить статус
+2023-03-09/20.00.41	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 36, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 16, 20, 41), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 11, 31, 32), 'FDateClose': None, 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-09/20.00.49	EVENT	echo_def	Обращение от пользователя 5765098208 text = Помощь
+2023-03-09/20.00.49	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 36, 'FUserID': 9, 'FTGUID': '5765098208', 'FTGName': 'Владимир', 'FDateCreate': datetime.datetime(2023, 3, 1, 16, 20, 41), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 20, 0, 39), 'FDateClose': None, 'FActivity': 1, 'FName': 'Юрков Владимир', 'FPhone': '79156814087'}}
+2023-03-09/20.00.51	EVENT	process_start_command	Пользователь 450250904 - Димон обратился к телеграм боту
+2023-03-09/20.00.51	EVENT	process_start_command	{'RESULT': 'ERROR', 'DESC': 'Не удалось найти активного пользователя', 'DATA': {}}
+2023-03-09/20.00.56	EVENT	subscribe	Пользователь 450250904 предоставил номер телефона: 79035875004
+2023-03-09/20.00.56	EVENT	subscribe	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {}}
+2023-03-09/20.01.00	EVENT	echo_def	Обращение от пользователя 450250904 text = Получить статус
+2023-03-09/20.01.00	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 38, 'FUserID': 10, 'FTGUID': '450250904', 'FTGName': 'Димон', 'FDateCreate': datetime.datetime(2023, 3, 9, 20, 0, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 20, 0, 54), 'FDateClose': None, 'FActivity': 1, 'FName': 'Прокофьев Дмитрий', 'FPhone': '79035875004'}}
+2023-03-09/20.01.17	EVENT	echo_def	Обращение от пользователя 450250904 text = Помощь
+2023-03-09/20.01.17	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 38, 'FUserID': 10, 'FTGUID': '450250904', 'FTGName': 'Димон', 'FDateCreate': datetime.datetime(2023, 3, 9, 20, 0, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 20, 0, 58), 'FDateClose': None, 'FActivity': 1, 'FName': 'Прокофьев Дмитрий', 'FPhone': '79035875004'}}
+2023-03-09/20.01.21	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 38, 'FUserID': 10, 'FTGUID': '450250904', 'FTGName': 'Димон', 'FDateCreate': datetime.datetime(2023, 3, 9, 20, 0, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 20, 1, 14), 'FDateClose': None, 'FActivity': 1, 'FName': 'Прокофьев Дмитрий', 'FPhone': '79035875004'}}
+2023-03-09/20.01.24	WARNING	anti_flood	Ошибка многократного запроса от пользователя: 450250904.
+2023-03-09/20.01.27	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 38, 'FUserID': 10, 'FTGUID': '450250904', 'FTGName': 'Димон', 'FDateCreate': datetime.datetime(2023, 3, 9, 20, 0, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 20, 1, 18), 'FDateClose': None, 'FActivity': 1, 'FName': 'Прокофьев Дмитрий', 'FPhone': '79035875004'}}
+2023-03-09/20.01.30	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 38, 'FUserID': 10, 'FTGUID': '450250904', 'FTGName': 'Димон', 'FDateCreate': datetime.datetime(2023, 3, 9, 20, 0, 54), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 20, 1, 24), 'FDateClose': None, 'FActivity': 1, 'FName': 'Прокофьев Дмитрий', 'FPhone': '79035875004'}}
+2023-03-09/23.18.53	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-09/23.18.53	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 37, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 4, 15, 36, 1), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 19, 10, 10), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-09/23.19.13	EVENT	echo_def	Обращение от пользователя 382507782 text = Помощь
+2023-03-09/23.19.13	EVENT	help_func	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 37, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 4, 15, 36, 1), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 23, 18, 51), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
+2023-03-09/23.19.17	EVENT	echo_def	Обращение от пользователя 382507782 text = Получить статус
+2023-03-09/23.19.17	EVENT	take_status	{'RESULT': 'SUCCESS', 'DESC': '', 'DATA': {'FID': 37, 'FUserID': 2, 'FTGUID': '382507782', 'FTGName': 'Scitec', 'FDateCreate': datetime.datetime(2023, 3, 4, 15, 36, 1), 'FLastAccessDate': datetime.datetime(2023, 3, 9, 23, 19, 11), 'FDateClose': None, 'FActivity': 1, 'FName': 'Андрей Терлецкий', 'FPhone': '79661140411'}}
