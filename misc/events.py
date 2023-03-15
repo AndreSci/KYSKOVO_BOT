@@ -17,6 +17,26 @@ DO_SEARCHING = True
 THREAD_LIFE = threading.Thread()
 
 
+def gorgeous_text(number: str) -> str:
+    """ Функция исправляет склонение слова (событие) к числу """
+
+    if len(number):
+        number_for = number[-1]
+
+        if len(number) > 1 and number[-2] == '1':
+            ret_value = f"{number} событий"
+        elif number_for == '1':
+            ret_value = f"{number} событие"
+        elif number_for in ['2', '3', '4']:
+            ret_value = f"{number} события"
+        else:  # if number_for in ['0', '5', '6', '7', '8', '9']:
+            ret_value = f"{number} событий"
+    else:
+        ret_value = 'none событий'
+
+    return ret_value
+
+
 class SendMiss:
     """ Класс сбора ошибок при отправках сообщений """
     def __init__(self):
@@ -63,7 +83,9 @@ def start_event_manager(token: str):
             if events_for:
 
                 list_event_name = list()
-                logger.add_log(f"EVENT\tstart_event_manager\tНайдено {len(ev_mng.all_events_id)} событий, "
+                index_events = str(len(ev_mng.all_events_id))  # Для правильного текста
+
+                logger.add_log(f"EVENT\tstart_event_manager\tНайдено {gorgeous_text(index_events)}, "
                                f"идет процесс обработки...")
                 logger.add_log(f"EVENT\tstart_event_manager\tСписок FID событий: {ev_mng.all_events_id}",
                                print_it=False)
