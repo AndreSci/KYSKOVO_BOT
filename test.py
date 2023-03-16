@@ -1,4 +1,4 @@
-
+import math
 
 def in_001():
     list_event_name = [1, 2, 3, 4]
@@ -28,8 +28,18 @@ def gorgeous_text(number: str) -> str:
     return ret_value
 
 
+def f_math():
+
+    max_index = 36
+    index_step = 10
+
+    print(math.ceil(max_index / index_step))
+
+
 if __name__ == '__main__':
 
     # test_001()
 
     print(gorgeous_text("21"))
+
+    f_math()

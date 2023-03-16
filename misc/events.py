@@ -3,6 +3,7 @@ import asyncio
 import threading
 import time
 import requests
+import math
 
 from db.requests.events import EventDB
 from misc.logger import Logger
@@ -120,6 +121,87 @@ def start_event_manager(token: str):
     logger.add_log(f"WARNING\tstart_event_manager\tПоток для поиска событий в БД завершил свою жизнь.")
 
 
+def start_event_manager_async(token: str):
+    """ Основная функция запуска сбора событий из БД """
+
+    ev_mng = EventManagerBD(token)
+
+    logger.add_log(f"EVENT\tstart_event_manager\tПоиск событий Активен")
+
+    time.sleep(2)
+    index = 30
+
+    while DO_SEARCHING:
+        time.sleep(1)
+
+        # Каждый 30 index проверяем базу на событие, сделано для быстрой остановки потока
+        if index >= 30:
+            index = 0
+            events_for = ev_mng.take_events()
+
+            # класс сбора пропущенных сообщений
+            miss_mess = SendMiss()
+
+            if events_for:
+
+                list_event_name = list()
+                index_events = str(len(ev_mng.all_events_id))  # Для правильного текста
+
+                logger.add_log(f"EVENT\tstart_event_manager\tНайдено {gorgeous_text(index_events)}, "
+                               f"идет процесс обработки...")
+                logger.add_log(f"EVENT\tstart_event_manager\tСписок FID событий: {ev_mng.all_events_id}",
+                               print_it=False)
+                # -----------------------------------------------------------------------------------------------
+
+                max_index = len(ev_mng.events)
+                print(f"LEN = {max_index}")
+                index_step = 20
+
+                if index_step > max_index:
+                    index_step = max_index
+
+                old_step = 0
+                new_step = index_step
+                print(f"{max_index} - {old_step} - {new_step}")
+
+                for step in range(math.ceil(max_index / index_step)):
+
+                    it_mass = ev_mng.events[old_step:index_step]
+
+                    # Если нужно срочно отменить рассылку
+                    if not DO_SEARCHING:
+                        logger.add_log(f"WARNING\tstart_event_manager\t"
+                                       f"Рассылка была экстренно отключена администратором")
+                        return 2
+
+                    old_step = new_step + 1
+                    new_step = new_step + index_step
+
+                    if new_step > max_index:
+                        new_step = max_index
+
+                    print(f"{max_index} - {old_step} - {new_step}")
+
+                    if old_step > max_index:
+                        break
+
+                # -----------------------------------------------------------------------------------------------
+
+                logger.add_log(f"EVENT\tstart_event_manager\tПропущенных сообщение при рассылке "
+                               f"{len(miss_mess.miss_list)}")
+                logger.add_log(f"EVENT\tstart_event_manager\t"
+                               f"Список всех событий которые имели адресата: {list_event_name}", print_it=False)
+
+                result_update = EventDB.done_events(ev_mng.all_events_id)
+
+                logger.add_log(f"{result_update['RESULT']}\tstart_event_manager\t"
+                               f"Результат обновления БД: {result_update}")
+
+        index += 1
+
+    logger.add_log(f"WARNING\tstart_event_manager\tПоток для поиска событий в БД завершил свою жизнь.")
+
+
 class EventManagerBD:
     """ Класс служит для обработки Event из Базы данных """
 
@@ -199,6 +281,7 @@ class EventThread:
         if not THREAD_LIFE.is_alive():
 
             DO_SEARCHING = True
+            # THREAD_LIFE = threading.Thread(target=start_event_manager, args=[token, ])
             THREAD_LIFE = threading.Thread(target=start_event_manager, args=[token, ])
             THREAD_LIFE.start()
 
