@@ -8,6 +8,7 @@ import math
 from db.requests.events import EventDB
 from misc.logger import Logger
 from bot import bot, logger
+from misc.process_event import process_sender
 
 from asyncio import sleep
 
@@ -121,7 +122,7 @@ def start_event_manager(token: str):
     logger.add_log(f"WARNING\tstart_event_manager\tПоток для поиска событий в БД завершил свою жизнь.")
 
 
-def start_event_manager_async(token: str):
+def start_event_manager_process(token: str):
     """ Основная функция запуска сбора событий из БД """
 
     ev_mng = EventManagerBD(token)
@@ -151,22 +152,10 @@ def start_event_manager_async(token: str):
                                f"идет процесс обработки...")
                 logger.add_log(f"EVENT\tstart_event_manager\tСписок FID событий: {ev_mng.all_events_id}",
                                print_it=False)
-                # -----------------------------------------------------------------------------------------------
 
-                max_index = len(ev_mng.events)
-                print(f"LEN = {max_index}")
-                index_step = 20
+                list_sender = list()
 
-                if index_step > max_index:
-                    index_step = max_index
-
-                old_step = 0
-                new_step = index_step
-                print(f"{max_index} - {old_step} - {new_step}")
-
-                for step in range(math.ceil(max_index / index_step)):
-
-                    it_mass = ev_mng.events[old_step:index_step]
+                for it in ev_mng.events:
 
                     # Если нужно срочно отменить рассылку
                     if not DO_SEARCHING:
@@ -174,18 +163,16 @@ def start_event_manager_async(token: str):
                                        f"Рассылка была экстренно отключена администратором")
                         return 2
 
-                    old_step = new_step + 1
-                    new_step = new_step + index_step
+                    # отправляем сообщение
+                    # ev_mng.send_telegram(it['FTGUID'], f"{it['FDateEvent']}\n{it['FEventMessage']}", miss_mess)
+                    list_sender.append({'token': ev_mng.token,
+                                        'user_id': it['FTGUID'],
+                                        'text': f"{it['FDateEvent']}\n{it['FEventMessage']}"})
 
-                    if new_step > max_index:
-                        new_step = max_index
-
-                    print(f"{max_index} - {old_step} - {new_step}")
-
-                    if old_step > max_index:
-                        break
-
-                # -----------------------------------------------------------------------------------------------
+                    # Проверяем и добавляем в список обработанных событий
+                    if it['EFID'] not in list_event_name:
+                        list_event_name.append(it['EFID'])
+                process_sender(list_sender)
 
                 logger.add_log(f"EVENT\tstart_event_manager\tПропущенных сообщение при рассылке "
                                f"{len(miss_mess.miss_list)}")
@@ -281,8 +268,8 @@ class EventThread:
         if not THREAD_LIFE.is_alive():
 
             DO_SEARCHING = True
+            THREAD_LIFE = threading.Thread(target=start_event_manager_process, args=[token, ])
             # THREAD_LIFE = threading.Thread(target=start_event_manager, args=[token, ])
-            THREAD_LIFE = threading.Thread(target=start_event_manager, args=[token, ])
             THREAD_LIFE.start()
 
             logger.add_log(f"EVENT\tEventThread.start\t"

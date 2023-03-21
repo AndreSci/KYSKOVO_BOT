@@ -1,4 +1,11 @@
 import math
+import multiprocessing
+import asyncio
+from asyncio import sleep
+import threading
+import time
+from misc.timer import timer_function
+
 
 def in_001():
     list_event_name = [1, 2, 3, 4]
@@ -36,6 +43,51 @@ def f_math():
     print(math.ceil(max_index / index_step))
 
 
+async def some_pros_2(a, b):
+    await sleep(b * 0.05)
+    print(f"{a} - {b * 0.05}")
+
+
+async def some_proc(some_list: list):
+    print("Создаём асинки")
+    e_loop = asyncio.get_event_loop()
+
+    loop_list = list()
+
+    index = 1
+
+    for it in some_list:
+        loop_list.append(e_loop.create_task(some_pros_2(it, index)))
+        index += 1
+
+    for t in loop_list:
+        await t
+
+    print("Дождался результата")
+
+
+def main_async(some_list):
+    print("Запустил создавать асинки")
+    asyncio.run(some_proc(some_list))
+
+
+@timer_function
+def p_main(some_list: list):
+
+    proc = multiprocessing.Process(target=main_async, args=(some_list, ))
+    # proc = threading.Thread(target=main_async, args=(some_list,))
+
+    proc.start()
+
+    proc.join(timeout=3)
+
+    if proc.is_alive():
+        print("Был принудительно удалён")
+        proc.kill()
+    else:
+        print("Процесс удалился сам")
+
+
 if __name__ == '__main__':
 
     # test_001()
@@ -43,3 +95,7 @@ if __name__ == '__main__':
     print(gorgeous_text("21"))
 
     f_math()
+
+    it_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+    p_main(it_list)
