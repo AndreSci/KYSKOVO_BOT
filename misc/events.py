@@ -3,8 +3,8 @@ import asyncio
 import threading
 import time
 import requests
-import math
 
+from misc.consts import BOT
 from db.requests.events import EventDB
 from misc.logger import Logger
 from bot import bot, logger
@@ -138,6 +138,7 @@ def start_event_manager_process(token: str):
         # Каждый 30 index проверяем базу на событие, сделано для быстрой остановки потока
         if index >= 30:
             index = 0
+            # Получаем список событий из БД
             events_for = ev_mng.take_events()
 
             # класс сбора пропущенных сообщений
@@ -155,8 +156,8 @@ def start_event_manager_process(token: str):
 
                 list_sender = list()
 
+                # Сбор данных для отправки в Телеграм
                 for it in ev_mng.events:
-
                     # Если нужно срочно отменить рассылку
                     if not DO_SEARCHING:
                         logger.add_log(f"WARNING\tstart_event_manager\t"
@@ -172,6 +173,8 @@ def start_event_manager_process(token: str):
                     # Проверяем и добавляем в список обработанных событий
                     if it['EFID'] not in list_event_name:
                         list_event_name.append(it['EFID'])
+
+                # ОТПРАВКА СООБЩЕНИЙ
                 process_sender(list_sender)
 
                 logger.add_log(f"EVENT\tstart_event_manager\tПропущенных сообщение при рассылке "
@@ -268,7 +271,7 @@ class EventThread:
         if not THREAD_LIFE.is_alive():
 
             DO_SEARCHING = True
-            THREAD_LIFE = threading.Thread(target=start_event_manager_process, args=[token, ])
+            THREAD_LIFE = threading.Thread(target=start_event_manager_process, args=[token, ], daemon=True)
             # THREAD_LIFE = threading.Thread(target=start_event_manager, args=[token, ])
             THREAD_LIFE.start()
 

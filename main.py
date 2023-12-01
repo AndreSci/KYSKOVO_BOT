@@ -10,6 +10,7 @@ from bot import dp, bot, logger, TOKEN
 from misc.events import EventThread
 from misc.allowed_users import AllowedUser
 
+from db.requests.system import SystemMsg
 
 async def anti_flood(*args, **kwargs):
     msg = args[0]
@@ -186,6 +187,32 @@ async def off_newsletter(msg: types.Message, state: FSMContext):
         else:
             await bot.send_message(msg.from_user.id,
                                    f"Не удалось остановить процесс поиска событий. Попробуйте еще раз.")
+    else:
+        await bot.send_message(msg.from_user.id,
+                               f"Данная команда для вас не доступна")
+
+
+@dp.message_handler(Text(equals=['/system_warning'], ignore_case=True))
+@dp.throttled(anti_flood, rate=15)
+async def system_warning(msg: types.Message, state: FSMContext):
+    test_user = AllowedUser()
+
+    # Ищем id пользователя в файле allowed_users.ini
+    if test_user.find_user(str(msg.from_user.id)):
+
+        await bot.send_message(msg.from_user.id,
+                               f"Ожидаем завершения процесса рассылки.")
+
+        users_res = SystemMsg.take_all_users()
+
+        if users_res['RESULT'] == "SUCCESS":
+            # Очевидно медленный вариант рассылки через обычный цикл.
+            for it in users_res['DATA']:
+                await bot.send_message(chat_id=it.get("FGUID"),
+                                       text="Внимание! В ближайшее время возможны перебои в работе сервиса.")
+        else:
+            await bot.send_message(msg.from_user.id,
+                                   f"Не удалось найти пользователей для рассылки: {users_res['DESC']}")
     else:
         await bot.send_message(msg.from_user.id,
                                f"Данная команда для вас не доступна")

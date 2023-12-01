@@ -1,4 +1,3 @@
-import multiprocessing
 import asyncio
 import threading
 import datetime
@@ -8,6 +7,7 @@ from asyncio import sleep
 import requests
 
 from misc.timer import timer_function
+from misc.consts import BOT
 
 
 TIME_QUEUE = 0.04
@@ -31,9 +31,23 @@ async def send_async(it: dict, loop_list: list, e_loop):
         print(f"EXCEPTION: {ex} in {url}")
 
 
+async def send_async_bot(it: dict):
+
+    try:
+        await sleep(TIME_QUEUE)
+
+        await BOT.send_message(chat_id=it.get('user_id'), text=it.get('text'))
+
+        with open('./error.jpg', 'rb') as photo:
+            await BOT.send_photo(chat_id=it.get('user_id'), photo=photo)
+
+        # print(f"{index} - {to_fixed(index * TIME_QUEUE, 2)} - {url}")
+    except Exception as ex:
+        print(f"EXCEPTION: {ex} in {it}")
+
+
 async def main_proc(some_list: list) -> list:
     """ Создаем асинхронную очередь """
-    print("Создаём асинки")
     e_loop = asyncio.get_event_loop()
 
     done_index = set()
@@ -67,14 +81,16 @@ async def main_proc(some_list: list) -> list:
                 if time_res.seconds > 1:
                     done_user[user_id]['time'] = datetime.datetime.now()
                     done_index.add(index)
-                    await send_async(it, loop_list, e_loop)
+                    # await send_async(it, loop_list, e_loop)
+                    await send_async_bot(it)
                 # else:
                 #     print(f"{index}: Еще рано отправлять этому пользователю сообщение")
             else:
                 done_index.add(index)
 
                 done_user[user_id] = {'time': datetime.datetime.now()}
-                await send_async(it, loop_list, e_loop)
+                # await send_async(it, loop_list, e_loop)
+                await send_async_bot(it)
 
             index += 1
 
@@ -93,34 +109,26 @@ async def main_proc(some_list: list) -> list:
 res_proc = list()
 
 
-def main_async(some_list):
+def main_async(message_list):
     global res_proc
-    print("Запустил создавать асинки")
-    res_proc = asyncio.run(main_proc(some_list))
+    res_proc = asyncio.run(main_proc(message_list))
 
     print(res_proc)
 
 
 @timer_function
-def process_sender(some_list: list):
+def process_sender(message_list: list):
 
     # proc = multiprocessing.Process(target=main_async, args=(some_list, ))
-    proc = threading.Thread(target=main_async, args=(some_list,))
+    proc = threading.Thread(target=main_async, args=(message_list,), daemon=True)
 
     proc.start()
-
     proc.join()
-
-    if proc.is_alive():
-        print("Был принудительно удалён")
-        proc.kill()
-    else:
-        print("Процесс удалился сам")
 
 
 if __name__ == "__main__":
-
-    it_list = [{'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello1'},
+    # Проверяем работоспособность
+    test_list = [{'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello1'},
                {'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello2'},
                {'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello3'},
                {'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello4'},
@@ -133,4 +141,4 @@ if __name__ == "__main__":
                {'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello11'},
                {'token': '5449524516:AAFV-ay5kVR9dP3d7EsjwibWg65TbMBKgAY', 'user_id': '382507782', 'text': 'hello12'}]
 
-    process_sender(it_list)
+    process_sender(test_list)

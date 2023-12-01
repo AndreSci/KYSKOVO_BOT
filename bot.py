@@ -4,6 +4,8 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from misc.settings import SettingsIni
 from misc.logger import Logger
 
+from misc.consts import ChangeConst
+
 
 TOKEN = ''
 # HTTP_REG = 'http://yurok3000.ru:8084/RegisterTGUser'
@@ -27,5 +29,9 @@ logger = Logger(set_ini)
 
 # Объявляем бота
 bot = Bot(token=TOKEN)
+
+# Делаем объект bot общедоступным через файл consts.py
+ChangeConst.update_bot(bot)
+
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
