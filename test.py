@@ -4,7 +4,6 @@ import asyncio
 from asyncio import sleep
 import threading
 import time
-import datetime
 from misc.timer import timer_function
 
 
@@ -93,16 +92,10 @@ if __name__ == '__main__':
 
     # test_001()
 
-    # print(gorgeous_text("21"))
-    #
-    # f_math()
-    t1 = datetime.datetime.now()
-    time.sleep(3)
-    t2 = datetime.datetime.now()
-    result = t2 - t1
+    print(gorgeous_text("21"))
 
-    print(result.seconds)
+    f_math()
 
-    it_list = [1, 2, 3]  # , 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    it_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
-    # p_main(it_list)
+    p_main(it_list)
