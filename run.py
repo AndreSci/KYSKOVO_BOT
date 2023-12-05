@@ -1,9 +1,6 @@
-from aiogram.utils import executor
 import ctypes
 from bot import dp, logger, TOKEN
 from misc.events import EventThread
-
-from main import *
 
 
 def run_bot():

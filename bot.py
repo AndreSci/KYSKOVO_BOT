@@ -1,5 +1,4 @@
-from aiogram import Bot, types
-from aiogram.dispatcher import Dispatcher, FSMContext
+from aiogram import Bot, Dispatcher, FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from misc.settings import SettingsIni
 from misc.logger import Logger
@@ -25,7 +24,7 @@ else:
     TOKEN = set_ini.token
 
 # Создаем глобальный объект для логирования
-logger = Logger(set_ini)
+logger = Logger(set_ini.log_path)
 
 # Объявляем бота
 bot = Bot(token=TOKEN)
